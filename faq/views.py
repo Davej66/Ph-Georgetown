@@ -2,7 +2,6 @@ from django.shortcuts import render
 
 
 
-def index(request):
+def faq(request):
     """ A view to return the index page """
-    return render(request, 'home/index.html')
-
+    return render(request, 'faq/faq.html')

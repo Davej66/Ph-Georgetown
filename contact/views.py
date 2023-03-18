@@ -2,7 +2,6 @@ from django.shortcuts import render
 
 
 
-def index(request):
+def contact(request):
     """ A view to return the index page """
-    return render(request, 'home/index.html')
-
+    return render(request, 'contact/contact.html')
