@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'news',
     'services',
     'cloudinary',
+    'faq',
     
 
     # Other
