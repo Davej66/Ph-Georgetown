@@ -256,4 +256,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 default_auto_field = 'django.db.models.BigAutoField'
 
 
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
