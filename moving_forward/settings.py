@@ -59,8 +59,6 @@ INSTALLED_APPS = [
     'contact',
     'news',
     'services',
-    'faq',
-    'django.contrib.staticfiles',
     'cloudinary_storage',
     'cloudinary',
     
