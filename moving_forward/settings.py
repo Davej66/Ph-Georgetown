@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import dj_database_url
 
+from cloudinary.uploader import upload
+from cloudinary.utils import cloudinary_url
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -109,9 +112,10 @@ TEMPLATES = [
 ]
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'your_cloud_name',
-    'API_KEY': 'your_api_key',
-    'API_SECRET': 'your_api_secret'
+    'CLOUD_NAME': os.getenv('your_cloud_name',' '),
+    'API_KEY': os.getenv('your_api_key',' '),
+    'API_SECRET': os.getenv('your_api_secret',' '),
+    'SECRET': os.getenv('secure',' ')
 }
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
