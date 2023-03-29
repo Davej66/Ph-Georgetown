@@ -60,6 +60,9 @@ INSTALLED_APPS = [
     'news',
     'services',
     'faq',
+    'django.contrib.staticfiles',
+    'cloudinary_storage',
+    'cloudinary',
     
 
     # Other
@@ -188,6 +191,8 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+MEDIA_URL = '/media/'  # or any prefix you choose
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 if 'USE_AWS' in os.environ:
     # Cache control
@@ -197,7 +202,7 @@ if 'USE_AWS' in os.environ:
     }
     
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'djj-moving-forward'
+    AWS_STORAGE_BUCKET_NAME = 'ph-georgetown'
     AWS_S3_REGION_NAME = 'us-east-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
@@ -241,3 +246,10 @@ else:
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 default_auto_field = 'django.db.models.BigAutoField'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'your_cloud_name',
+    'API_KEY': 'your_api_key',
+    'API_SECRET': 'your_api_secret'
+}
+
