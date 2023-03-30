@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['ph-georgetown.onrender.com/', 'localhost']
+ALLOWED_HOSTS = ['ph-georgetown.onrender.com', 'localhost']
 
 # Add Render.com URL to allowed hosts
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
@@ -255,4 +255,6 @@ else:
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 default_auto_field = 'django.db.models.BigAutoField'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
