@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['djj-moving-forward.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['ph-georgetown.onrender.com/', 'localhost']
 
 # Add Render.com URL to allowed hosts
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
@@ -113,10 +113,10 @@ TEMPLATES = [
 ]
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.getenv('your_cloud_name',' '),
-    'API_KEY': os.getenv('your_api_key',' '),
-    'API_SECRET': os.getenv('your_api_secret',' '),
-    'SECRET': os.getenv('secure',' ')
+    'CLOUD_NAME': os.getenv('your_cloud_name'),
+    'API_KEY': os.getenv('your_api_key'),
+    'API_SECRET': os.getenv('your_api_secret'),
+    'SECRET': os.getenv('secure')
 }
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
@@ -256,5 +256,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 default_auto_field = 'django.db.models.BigAutoField'
 
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
