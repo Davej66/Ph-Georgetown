@@ -12,7 +12,8 @@ html {
 
 
 body {
-    background: src("/media/merthyxr.png") no-repeat center center fixed;
+    background: url('/media/merthyxr.png') no-repeat center center fixed;
+    /* background: url("/media/merthyxr.png") alt="My Image" no-repeat center center fixed; */
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
