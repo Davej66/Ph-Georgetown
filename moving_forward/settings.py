@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['ph-georgetown.onrender.com', '8000-davej66-phgeorgetown-oom8qdjkmxa.ws-eu101.gitpod.io','localhost']
+ALLOWED_HOSTS = ['localhost' ,'*','ph-georgetown.onrender.com', 'localhost']
 
 # Add Render.com URL to allowed hosts
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
