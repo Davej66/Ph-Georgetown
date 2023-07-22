@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'allauth',
@@ -65,7 +64,6 @@ INSTALLED_APPS = [
     'contact',
     'news',
     'services',
-    'cloudinary',
     'faq',
     
 
@@ -114,12 +112,12 @@ TEMPLATES = [
     },
 ]
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.getenv('your_cloud_name'),
-    'API_KEY': os.getenv('your_api_key'),
-    'API_SECRET': os.getenv('your_api_secret'),
-    'SECRET': os.getenv('secure')
-}
+#' CLOUDINARY_STORAGE = {
+ #   'CLOUD_NAME': os.getenv('your_cloud_name'),
+ #   'API_KEY': os.getenv('your_api_key'),
+ #   'API_SECRET': os.getenv('your_api_secret'),
+ #   'SECRET': os.getenv('secure')
+# }
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
