@@ -168,7 +168,7 @@ input[name='q']::placeholder {
     font-size: large;
     margin: 0;
     padding: 0;
-    width: 400px;
+    width: 260px; !important;
     background-color: #f1f1f1;
     position: sticky;
     height: 220px;
