@@ -163,12 +163,12 @@ input[name='q']::placeholder {
     min-height: 300vh;
   }
 
-/* The side navigation menu */
+/* The sidebar navigation menu */
 .side-bar {
     font-size: large;
     margin: 0;
     padding: 0;
-    width: 350px; !important;
+    width: 320px; !important;
     background-color: #f1f1f1;
     position: sticky;
     height: 220px;
@@ -354,7 +354,7 @@ input[name='q']::placeholder {
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
+@media (max-width: 900px) {
     .header-container {
         padding-top: 116px;
     }
@@ -422,5 +422,4 @@ input[name='q']::placeholder {
 }
 
 /* media sidebar with */
-
 
