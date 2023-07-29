@@ -172,7 +172,7 @@ input[name='q']::placeholder {
     font-size: large;
     margin: 0;
     padding: 0;
-    width: 400px; !important;
+    width: 350px; !important;
     background-color: #f1f1f1;
     position: sticky;
     height: 220px;
@@ -259,6 +259,14 @@ input[name='q']::placeholder {
 }
 
 /* Allauth form formatting */
+
+.side-bar {
+    /* max-width: 100px;*/
+     width: 100%;
+     height: auto;
+     position: relative;
+ }
+
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
