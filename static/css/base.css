@@ -12,12 +12,12 @@ html {
 
 
 body {
-    background: url("/static/media/merthyr.png") no-repeat center center fixed;
+    /*background: url("/static/media/merthyr.png") no-repeat center center fixed;*?
     /* background: url("/media/merthyxr.png") alt="My Image" no-repeat center center fixed; */
     /*background-size: cover;
     height: calc(100vh - 164px);*/
-    color: #555;
-    background-color: whitesmoke;
+    color: #0fcce9;
+    background-color:#0fcce9;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -415,5 +415,15 @@ input[name='q']::placeholder {
         font-size: 1.0rem;
     }
 
+    .side-bar {
+       /* max-width: 100px;*/
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
 }
+
+/* media sidebar with */
+
 
