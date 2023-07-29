@@ -17,7 +17,7 @@ body {
     /*background-size: cover;
     height: calc(100vh - 164px);*/
     color: #0fcce9;
-    background-color:#0fcce9;
+    background-color: #0fcce9;
     font-family: 'Lato';
 }
 
@@ -32,7 +32,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-   font-size: large;
+    font-size: large;
 }
 
 .main-logo-link {
@@ -52,7 +52,8 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
+    /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -75,7 +76,7 @@ body {
 
 .tstyle {
     padding: 1rem;
-    color:#000000;
+    color: #000000;
 }
 
 .lcorner {
@@ -107,11 +108,11 @@ body {
 }
 
 .bg-blue {
-    background:blue;
+    background: blue;
 }
 
 .bg-pblue {
-    background:#ADD8E6;
+    background: #ADD8E6;
 }
 
 .bg-black {
@@ -119,20 +120,20 @@ body {
 }
 
 .text-blue {
-    color: #ADD8E6!important;
+    color: #ADD8E6 !important;
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: #ADD8E6;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #ADD8E6;
+    z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -161,20 +162,21 @@ input[name='q']::placeholder {
     align-items: center;
     text-align: center;
     min-height: 300vh;
-  }
+}
 
 /* The sidebar navigation menu */
 .side-bar {
     font-size: large;
     margin: 0;
     padding: 0;
-    width: 320px; !important;
+    width: 320px;
+     !important;
     background-color: #f1f1f1;
     position: sticky;
     height: 220px;
     overflow: auto;
 }
-  
+
 
 
 /* ------------------------------- bootstrap toasts */
@@ -196,10 +198,10 @@ input[name='q']::placeholder {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -249,17 +251,19 @@ input[name='q']::placeholder {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* Allauth form formatting */
 
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -277,8 +281,8 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -295,18 +299,19 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8;
+    /* text-info */
 }
 
 /* Product Form */
@@ -395,7 +400,8 @@ input[name='q']::placeholder {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 
@@ -403,7 +409,7 @@ input[name='q']::placeholder {
         width: 200px;
         height: 300px;
     }
-    
+
     .tstyle {
         font-size: .9rem;
     }
@@ -413,7 +419,7 @@ input[name='q']::placeholder {
     }
 
     .side-bar {
-       /* max-width: 100px;*/
+        /* max-width: 100px;*/
         width: 100%;
         height: auto;
         position: relative;
@@ -423,3 +429,15 @@ input[name='q']::placeholder {
 
 /* media sidebar with */
 
+@media (max-width: 992px) {
+
+    .side-bar {
+        width: 200px;
+        /*margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;*/
+    }
+}
