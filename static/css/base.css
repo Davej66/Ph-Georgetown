@@ -14,10 +14,14 @@ html {
 body {
     background: url("/static/media/merthyr.png") no-repeat center center fixed;
     /* background: url("/media/merthyxr.png") alt="My Image" no-repeat center center fixed; */
-    background-size: cover;
-    height: calc(100vh - 164px);
+    /*background-size: cover;
+    height: calc(100vh - 164px);*/
     color: #555;
     background-color: whitesmoke;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: 'Lato';
 }
 
@@ -168,7 +172,7 @@ input[name='q']::placeholder {
     font-size: large;
     margin: 0;
     padding: 0;
-    width: 20px; !important;
+    width: 400px; !important;
     background-color: #f1f1f1;
     position: sticky;
     height: 220px;
