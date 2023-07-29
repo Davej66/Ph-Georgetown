@@ -19,6 +19,7 @@ body {
     color: #0fcce9;
     background-color: #0fcce9;
     font-family: 'Lato';
+    max-height: 30px;
 }
 
 /* from Bulma */
@@ -344,7 +345,7 @@ input[name='q']::placeholder {
 
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 1500px) {
+@media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -429,10 +430,24 @@ input[name='q']::placeholder {
 
 /* media sidebar with */
 
-@media (max-width: 1500px) {
+@media (max-width: 1050px) {
 
     .side-bar {
-        width: 200px;
+        width: 250px;
+        /*margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;*/
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .side-bar {
+        width: 370px;
         /*margin: 0;
         padding: 0;
         background-color: #f1f1f1;
