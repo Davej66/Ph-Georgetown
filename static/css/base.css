@@ -429,7 +429,7 @@ input[name='q']::placeholder {
 
 /* media sidebar with */
 
-@media (max-width: 992px) {
+@media (max-width: 1500px) {
 
     .side-bar {
         width: 200px;
