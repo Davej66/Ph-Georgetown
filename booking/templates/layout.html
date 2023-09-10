@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar bg-white navbar-white navbar-expand-lg shadow-sm">
             <div class="container-fluid">
-                <a class="navbar-brand  cHover cGreen fs-2" href="{% url 'index' %}">
+                <a class="navbar-brand  cHover cGreen fs-2" href="{% url 'home' %}">
                     Dr.John Smith
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
                             <ul class="dropdown-menu  border zNav">
                               <li><a class="dropdown-item" href="{% url 'userPanel' %}">User Panel</a></li>
                               <li><hr class=""></li>
-                              <li><a class="dropdown-item" href="">Sign Out</a></li>
+                              <li><a class="dropdown-item" href="{% url 'staffPanel' %}">Sign Out</a></li>
                             </ul>
                         </li>
                         {% else %}

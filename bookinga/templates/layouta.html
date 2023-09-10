@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar bg-white navbar-white navbar-expand-lg shadow-sm">
             <div class="container-fluid">
-                <a class="navbar-brand  cHover cGreen fs-2" href="{% url 'indexa' %}">
+                <a class="navbar-brand  cHover cGreen fs-2" href="{% url 'home' %}">
                     Georgetown
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,19 +33,19 @@
                             <a class="nav-link active cHover" href="#contact">Contact Us</a>
                         </li>     
                         <li class="nav-item">
-                            <a class="nav-link active cHover" href="{% url 'booking' %}">Online Booking</a>
+                            <a class="nav-link active cHover" href="{% url 'bookinga' %}">Online Booking</a>
                         </li>                   
                         {% if user.is_authenticated %}
                         <!--Clinic Staff Link-->
                         <li class="nav-item">
-                            <a class="nav-link active cHover" href="">Staff Panel</a>
+                            <a class="nav-link active cHover" href="{% url 'staffPanela' %}">Staff Panel</a>
                         </li> 
                         <li class="nav-item dropdown me-3 fs-5">
                             <a class="nav-link active dropdown-toggle cHover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               User
                             </a>
                             <ul class="dropdown-menu  border zNav">
-                              <li><a class="dropdown-item" href="{% url 'userPanel' %}">User Panel</a></li>
+                              <li><a class="dropdown-item" href="{% url 'userPanela' %}">User Panel</a></li>
                               <li><hr class=""></li>
                               <li><a class="dropdown-item" href="">Sign Out</a></li>
                             </ul>

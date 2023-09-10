@@ -83,15 +83,15 @@ def bookingSubmit(request):
         'times':hour,
     })
 
-def userPanel(request):
+def userPanela(request):
     user = request.user
-    appointments = Appointmenta.objects.filter(user=user).order_by('day', 'time')
+    appointmentas = Appointmenta.objects.filter(user=user).order_by('day', 'time')
     return render(request, 'userPanela.html', {
         'user':user,
         'appointmentas':appointmentas,
     })
 
-def userUpdate(request, id):
+def userUpdatea(request, id):
     appointment = Appointmenta.objects.get(pk=id)
     userdatepicked = appointmenta.day
     #Copy  booking:
@@ -178,7 +178,7 @@ def userUpdateSubmita(request, id):
         'id': id,
     })
 
-def staffPanel(request):
+def staffPanela(request):
     today = datetime.today()
     minDate = today.strftime('%Y-%m-%d')
     deltatime = today + timedelta(days=21)
