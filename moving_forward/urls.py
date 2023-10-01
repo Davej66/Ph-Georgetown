@@ -26,7 +26,7 @@ urlpatterns = [
     path('indexa', include("bookinga.urls")),
     path('index', include("booking.urls")),
     path('accounts/', include('allauth.urls')),
-    path('home', include('home.urls')),
+    path('', include('home.urls')),
     path('products/', include('products.urls')),
     path('bag/', include('bag.urls')),
     path('profile/', include('profiles.urls')),
