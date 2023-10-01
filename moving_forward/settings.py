@@ -90,7 +90,7 @@ ROOT_URLCONF = 'moving_forward.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-CSRF_TRUSTED_ORIGINS = ['','https://*.mydomain.com','https://*.127.0.0.1','https://example.com','https://ph-georgetown-71c5478fa372.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['','https://*.mydomain.com','https://*.127.0.0.1','https://example.com', 'https://davej66-phgeorgetown-oom8qdjkmxa.ws-eu105.gitpod.io/','https://ph-georgetown-71c5478fa372.herokuapp.com/']
 
 TEMPLATES = [
     {
